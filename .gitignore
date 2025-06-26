@@ -163,3 +163,4 @@ bin/
 *.cfg
 share/
 .env
+test.*
