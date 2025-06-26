@@ -164,3 +164,4 @@ bin/
 share/
 .env
 test.*
+models/*
