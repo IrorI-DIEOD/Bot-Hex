@@ -14,7 +14,9 @@ token = os.getenv("BOT-TOKEN")
 
 # cog list
 INITIAL_EXTENSIONS = [
+    'Cogs.Event',
     'Cogs.ping',
+    'Cogs.Role',
 ]
 
 class Hex(commands.Bot):
