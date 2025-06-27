@@ -21,7 +21,7 @@ class ButtonList(View):
 
     
     @discord.ui.button(label="親密10達成", style=discord.ButtonStyle.secondary)
-    async def button_callback2(self, interaction: discord.Interaction):
+    async def button_callback2(self, interaction: discord.Interaction, button = Button):
         uid = interaction.user.id
         member = interaction.guild.get_member(uid)
         role = discord.utils.get(interaction.guild.roles, name="親密10達成")
@@ -33,7 +33,7 @@ class ButtonList(View):
             await interaction.response.send_message("親密10達成のロールを取得しました！", ephemeral=True)
 
     @discord.ui.button(label="物書き", style=discord.ButtonStyle.secondary)
-    async def button_callback2(self, interaction: discord.Interaction):
+    async def button_callback3(self, interaction: discord.Interaction, button = Button):
         uid = interaction.user.id
         member = interaction.guild.get_member(uid)
         role = discord.utils.get(interaction.guild.roles, name="物書き")
@@ -45,7 +45,7 @@ class ButtonList(View):
             await interaction.response.send_message("物書きのロールを取得しました！", ephemeral=True)
 
     @discord.ui.button(label="R18", style=discord.ButtonStyle.secondary)
-    async def button_callback2(self, interaction: discord.Interaction):
+    async def button_callback4(self, interaction: discord.Interaction, button = Button):
         uid = interaction.user.id
         member = interaction.guild.get_member(uid)
         role = discord.utils.get(interaction.guild.roles, name="R18")
